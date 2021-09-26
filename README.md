@@ -21,4 +21,4 @@ Then, to install the packages so compilation works use the `install-pkgs` flag l
 ./reach compile program.rsh --install-pkgs
 ```
 
-:warn: Note: this does not compile your program, run `./reach compile program.rsh` after the install and add `.reach` to your `.gitignore` file.
+:warning: Note: this does not compile your program, run `./reach compile program.rsh` after the install and add `.reach` to your `.gitignore` file.
