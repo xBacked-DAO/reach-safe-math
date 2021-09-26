@@ -4,14 +4,6 @@
 // Inspired by https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol
 // Ensures Reach programs handle mathematical operations safely.
 
-export const tryDiv = (a, b) => {
-  if (a == 0 || b == 0) {
-    return 0;
-  } else {
-    return a / b;
-  }
-};
-
 export const trySub = (a, b) => {
   if (a < b) {
     return 0;
@@ -28,6 +20,15 @@ export const tryAdd = (a, b) => {
     return c;
   }
 };
+
+export const tryDiv = (a, b) => {
+  if (a == 0 || b == 0) {
+    return 0;
+  } else {
+    return a / b;
+  }
+};
+
 
 export const tryMul = (a, b) => {
   if (a == 0) {
