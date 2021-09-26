@@ -15,8 +15,10 @@ Alternatively
 import { tryDiv } from '@xBacked-DAO/reach-safe-math';
 ```
 
-Then, when compiling your Reach program use the `install-pkgs` flag.
+Then, to install the packages so compilation works use the `install-pkgs` flag like below.
 
 ```
 ./reach compile program.rsh --install-pkgs
 ```
+
+:warn: Note: this does not compile your program, run `./reach compile program.rsh` after the install and add `.reach` to your `.gitignore` file.
