@@ -22,7 +22,7 @@ export const tryAdd = (a, b) => {
 };
 
 export const tryDiv = (a, b) => {
-  if (a == 0 || b == 0) {
+  if (b == 0) {
     return 0;
   } else {
     return a / b;
