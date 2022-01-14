@@ -5,49 +5,24 @@
 // Ensures Reach programs handle mathematical operations safely.
 
 export const trySub = (a, b) => {
-  if (a < b) {
-    return 0;
-  } else {
-    return a - b;
-  }
+  return a < b ? 0 : a - b;
 };
 
 export const tryAdd = (a, b) => {
   const c = a + b;
-  if (c < a) {
-    return 0;
-  } else {
-    return c;
-  }
+  return c < a ? 0 : c;
 };
 
 export const tryDiv = (a, b) => {
-  if (b == 0) {
-    return 0;
-  } else {
-    return a / b;
-  }
+  return b == 0 ? 0 : a / b;
 };
 
-
 export const tryMul = (a, b) => {
-  if (a == 0) {
-    return 0
-  } else {
-    const c = a * b;
-    if (c / a != b) {
-      return 0;
-    } else {
-      return c;
-    }
-  }
+  const c = a == 0 ? 0 : a * b;
+  return c / a != b ? 0 : c;
 };
 
 export const tryMod = (a, b) => {
-  if (b == 0) {
-    return 0;
-  } else {
-    return a % b;
-  }
+  return b == 0 ? 0 : a % b;
 }
 
