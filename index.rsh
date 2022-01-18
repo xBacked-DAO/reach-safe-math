@@ -5,7 +5,7 @@
 // Ensures Reach programs handle mathematical operations safely.
 
 export const trySub = (a, b) => {
-  return a < b ? 0 : a - b;
+  return a < b ? 0 : (a - b);
 };
 
 export const tryAdd = (a, b) => {
@@ -14,15 +14,15 @@ export const tryAdd = (a, b) => {
 };
 
 export const tryDiv = (a, b) => {
-  return b == 0 ? 0 : a / b;
+  return b == 0 ? 0 : (a / b);
 };
 
 export const tryMul = (a, b) => {
-  const c = a == 0 ? 0 : a * b;
-  return c / a != b ? 0 : c;
+  const c = a == 0 ? 0 : (a * b);
+  return (c / a) != b ? 0 : c;
 };
 
 export const tryMod = (a, b) => {
-  return b == 0 ? 0 : a % b;
+  return b == 0 ? 0 : (a % b);
 }
 
